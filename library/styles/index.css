@@ -130,6 +130,10 @@ body {
     padding-block: 70px;
 }
 
+.hobby-section:last-child {
+    margin-bottom: 30px;
+}
+
 .hobby-section .text-container h2 {
     font-size: 30px;
     margin-bottom: 20px;
