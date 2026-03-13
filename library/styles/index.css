@@ -17,17 +17,21 @@ body {
     top: 0;
     z-index: 10;
     position: sticky;
-    padding-block: 15px;
     background-color: var(--background-standart);
+    animation: header-scrolled both;
+    animation-timeline: scroll();
+    animation-range: 0 1px;
 }
 
-.header.scrolled {
+/* .header.scrolled {
     box-shadow: 0 1px var(--header-box-shadow);
-}
+} */
 
 .header .container {
     gap: 20px;
+    padding-block: 15px;
     display: flex;
+    overflow: hidden;
     justify-content: space-between;
 }
 
@@ -128,6 +132,7 @@ body {
 .hobby-section {
     margin-top: 30px;
     padding-block: 70px;
+    overflow: hidden;
 }
 
 .hobby-section:last-child {
@@ -176,14 +181,14 @@ body {
 }
 
 .footer {
-    padding-block: 20px;
-    overflow-x: hidden;
     box-shadow: 0 -1px var(--footer-box-shadow);
     background-color: var(--background-standart);
 }
 
 .footer .container {
+    padding-block: 20px;
     display: flex;
+    overflow-x: hidden;
     align-items: center;
     justify-content: center;
 }

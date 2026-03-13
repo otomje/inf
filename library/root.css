@@ -48,7 +48,13 @@
     }
 }
 
-@keyframes block-info-flow {
+@keyframes header-scrolled {
+    to {
+        box-shadow: 0 1px var(--header-box-shadow);
+    }
+}
+
+/* @keyframes block-info-flow {
     0% {
         transform: translateY(0);
     }
@@ -60,4 +66,4 @@
     100% {
         transform: translateY(0);
     }
-}
+} */
